@@ -28,7 +28,7 @@ export const projects: Project[] = [
     role: "Lead Developer & Designer",
     year: "2026",
     image: "/images/projects/ark-preview.png",
-    link: "https://ark-genesis-001.vercel.app/",
+    link: "https://ark.chakraportfolio.xyz/",
     featured: true,
   },
   {
@@ -39,7 +39,7 @@ export const projects: Project[] = [
     role: "Creative Technologist",
     year: "2026",
     image: "/images/projects/archive.png",
-    link: "https://archivegenesis.vercel.app/",
+    link: "https://gallery.chakraportfolio.xyz/",
     featured: true,
   },
   {
