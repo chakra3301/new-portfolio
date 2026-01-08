@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "FOT-Matisse-Pro-EB";
+  src: url("/fonts/FOT-Matisse-Pro-EB.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #050505;
   --foreground: #ededed;
@@ -9,6 +17,7 @@
   --gray-dark: #0a0a0a;
   --gray-medium: #1a1a1a;
   --gray-light: #2a2a2a;
+  --font-matisse: "FOT-Matisse-Pro-EB", serif;
 }
 
 @theme inline {
@@ -216,7 +225,7 @@ body {
 
 /* Text gradient */
 .text-gradient {
-  background: linear-gradient(135deg, #ffffff 0%, #a0a0a0 100%);
+  background: linear-gradient(135deg, #808080 0%, #404040 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -227,6 +236,18 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Gradient red glowing outline for titles */
+.title-glow-red {
+  text-shadow: 
+    0 0 2px rgba(220, 38, 38, 0.8),
+    0 0 4px rgba(220, 38, 38, 0.6),
+    0 0 6px rgba(220, 38, 38, 0.4),
+    -0.5px -0.5px 0 rgba(220, 38, 38, 0.5),
+    0.5px -0.5px 0 rgba(220, 38, 38, 0.5),
+    -0.5px 0.5px 0 rgba(220, 38, 38, 0.5),
+    0.5px 0.5px 0 rgba(220, 38, 38, 0.5);
 }
 
 /* Hide scrollbar but allow scroll */
@@ -268,4 +289,13 @@ body {
   html {
     font-size: 14px;
   }
+}
+
+/* Matisse font for titles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-matisse);
+}
+
+.font-matisse {
+  font-family: var(--font-matisse);
 }

@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
+import Image from "next/image";
 import { projects, Project } from "@/lib/data";
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
@@ -42,6 +43,11 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
         style={{ transformStyle: "preserve-3d" }}
+        onClick={() => {
+          if (project.link && project.link !== "#") {
+            window.open(project.link, "_blank", "noopener,noreferrer");
+          }
+        }}
       >
         {/* Background gradient placeholder */}
         <div
@@ -55,6 +61,21 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             `,
           }}
         />
+
+        {/* Project Preview Image */}
+        {project.image && (
+          <div className="absolute inset-0">
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              className="object-cover opacity-90"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+            {/* Overlay gradient for text readability */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
+          </div>
+        )}
 
         {/* Grid overlay */}
         <div className="absolute inset-0 grid-pattern opacity-30" />
@@ -219,8 +240,8 @@ export function Projects() {
               Selected Work
             </span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
-            Featured <span className="text-gradient-red">Projects</span>
+          <h2 className="text-4xl md:text-6xl font-bold tracking-tight">
+            <span className="text-gradient">Featured</span> <span className="text-gradient-red">Projects</span>
           </h2>
           <p className="mt-6 text-lg text-gray-400 max-w-xl">
             A curated selection of digital products, interactive experiences,

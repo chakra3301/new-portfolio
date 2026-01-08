@@ -146,15 +146,15 @@ export function Navigation() {
           >
             <motion.span
               animate={isOpen ? { rotate: 45, y: 5 } : { rotate: 0, y: 0 }}
-              className="w-5 h-0.5 bg-white rounded-full"
+              className="w-5 h-0.5 bg-red-500 rounded-full shadow-[0_0_10px_rgba(239,68,68,0.8)]"
             />
             <motion.span
               animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
-              className="w-5 h-0.5 bg-white rounded-full"
+              className="w-5 h-0.5 bg-red-500 rounded-full shadow-[0_0_10px_rgba(239,68,68,0.8)]"
             />
             <motion.span
               animate={isOpen ? { rotate: -45, y: -5 } : { rotate: 0, y: 0 }}
-              className="w-5 h-0.5 bg-white rounded-full"
+              className="w-5 h-0.5 bg-red-500 rounded-full shadow-[0_0_10px_rgba(239,68,68,0.8)]"
             />
           </button>
         </div>

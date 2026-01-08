@@ -189,8 +189,8 @@ export function Art() {
             </span>
             <div className="w-12 h-px bg-red-500" />
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
-            Digital <span className="text-gradient-red">Artifacts</span>
+          <h2 className="text-4xl md:text-6xl font-bold tracking-tight">
+            <span className="text-gradient">Digital</span> <span className="text-gradient-red">Artifacts</span>
           </h2>
           <p className="mt-6 text-lg text-gray-400 max-w-xl mx-auto">
             Personal experiments in generative art, 3D visualization, and digital expression.

@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 
 export function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -112,82 +113,20 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Main content */}
+      {/* Main content - Title covering whole section */}
       <motion.div
         style={{ y, opacity, scale }}
-        className="relative z-10 text-center px-6 max-w-5xl mx-auto"
+        className="absolute inset-0 z-10 flex items-center justify-center"
       >
-        {/* Eyebrow */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-8"
-        >
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-red text-sm text-red-400 font-medium tracking-wider">
-            <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
-            CREATIVE TECHNOLOGIST
-          </span>
-        </motion.div>
-
-        {/* Main heading */}
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.4 }}
-          className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter mb-6"
-        >
-          <span className="text-gradient block">DIGITAL</span>
-          <span className="text-gradient-red block">ARTISAN</span>
-        </motion.h1>
-
-        {/* Subtitle */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed"
-        >
-          Crafting immersive digital experiences at the intersection of{" "}
-          <span className="text-white">design</span>,{" "}
-          <span className="text-white">code</span>, and{" "}
-          <span className="text-red-400">creative vision</span>.
-        </motion.p>
-
-        {/* CTA Buttons */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
-        >
-          <motion.a
-            href="#projects"
-            className="group relative px-8 py-4 bg-red-600 text-white font-medium rounded-full overflow-hidden"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            <span className="relative z-10">View Work</span>
-            <motion.div
-              className="absolute inset-0 bg-red-500"
-              initial={{ x: "-100%" }}
-              whileHover={{ x: 0 }}
-              transition={{ duration: 0.3 }}
-            />
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 red-glow-subtle" />
-          </motion.a>
-
-          <motion.a
-            href="#about"
-            className="group px-8 py-4 text-white font-medium rounded-full border border-white/20 hover:border-red-500/50 transition-colors"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            <span className="group-hover:text-red-400 transition-colors">
-              About Me
-            </span>
-          </motion.a>
-        </motion.div>
+        <div className="relative w-full h-full max-w-4xl max-h-[70vh] mx-auto">
+          <Image
+            src="/Asset 5_1.svg"
+            alt="GENESIS"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
       </motion.div>
 
       {/* Scroll indicator */}
