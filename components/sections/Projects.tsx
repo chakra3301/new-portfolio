@@ -240,9 +240,11 @@ export function Projects() {
               Selected Work
             </span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="text-gradient">Featured</span> <span className="text-gradient-red">Projects</span>
-          </h2>
+          <div className="overflow-visible py-2">
+            <h2 className="text-4xl md:text-6xl font-bold leading-[1.4]">
+              <span className="text-gradient inline-block">Featured</span> <span className="text-gradient-red inline-block">Projects</span>
+            </h2>
+          </div>
           <p className="mt-6 text-lg text-gray-400 max-w-xl">
             A curated selection of digital products, interactive experiences,
             and creative experiments.

@@ -25,14 +25,13 @@ export function Contact() {
           </span>
 
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8">
-            <span className="text-gradient">Let's Build</span>
+            <span className="text-gradient">Let's Build !</span>
             <br />
-            <span className="text-gradient-red">Something Great</span>
           </h2>
 
           <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12">
             Have a project in mind? I'd love to hear about it. Let's discuss how
-            we can work together to create something extraordinary.
+            we can work together to create something awesome.
           </p>
         </motion.div>
 
@@ -50,7 +49,7 @@ export function Contact() {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
-            <span className="relative z-10">Get In Touch</span>
+            <span className="relative z-10">GET IN TOUCH</span>
             <motion.svg
               className="relative z-10 w-6 h-6"
               fill="none"

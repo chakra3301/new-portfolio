@@ -37,14 +37,16 @@ export function About() {
           transition={{ duration: 1 }}
           className="text-center mb-24"
         >
-          <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-none">
-            <span className="text-gradient block mb-2">
-              {aboutContent.headline}
-            </span>
-            <span className="text-gradient-red block">
-              {aboutContent.subheadline}
-            </span>
-          </h2>
+          <div className="overflow-visible py-2">
+            <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.2]">
+              <span className="text-gradient block mb-2">
+                {aboutContent.headline}
+              </span>
+              <span className="text-gradient-red block">
+                {aboutContent.subheadline}
+              </span>
+            </h2>
+          </div>
         </motion.div>
 
         {/* Intro */}

@@ -74,11 +74,11 @@ export const projects: Project[] = [
   },
   {
     id: "project-6",
-    title: "FLUX",
-    description: "Motion design toolkit for creating fluid, physics-based animations in the browser.",
-    tech: ["TypeScript", "Canvas", "Web Workers"],
-    role: "Lead Developer",
-    year: "2022",
+    title: "DIGII GHOST",
+    description: "3D generative art project exploring the concept of digital ghosts and their interactions with the physical world.",
+    tech: ["blender", "after effects", "AI tools"],
+    role: "Creative Developer",
+    year: "2025",
     image: "/images/projects/flux.jpg",
     link: "#",
   },
@@ -136,15 +136,15 @@ export const artPieces: ArtPiece[] = [
 ];
 
 export const aboutContent = {
-  headline: "Building Digital Experiences",
-  subheadline: "That Feel Like the Future",
+  headline: "Building My World Through",
+  subheadline: "Art And Digital Experiences",
   intro: "I'm a creative technologist obsessed with the intersection of design, code, and human experience.",
   philosophy: [
     "I believe technology should feel magical, not mechanical.",
     "Every pixel matters. Every millisecond of animation matters.",
     "The best interfaces disappear — leaving only the experience.",
   ],
-  bio: "With over a decade of experience crafting digital products, I've worked with startups, agencies, and Fortune 500 companies to create experiences that push the boundaries of what's possible on the web. My work lives at the intersection of creative development, interactive design, and emerging technologies.",
+  bio: "With over a decade of experience crafting digital products, I've worked to create experiences that push the boundaries of what's possible on the web. My work lives at the intersection of creative development, interactive design, and emerging technologies.",
   skills: [
     "Creative Development",
     "WebGL & 3D Graphics",
@@ -154,8 +154,8 @@ export const aboutContent = {
     "Technical Direction",
   ],
   contact: {
-    email: "hello@example.com",
-    twitter: "@handle",
-    github: "github.com/handle",
+    email: "luca47hall@gmail.com",
+    twitter: "@nokiademonn",
+    github: "github.com/chakra3301",
   },
 };
