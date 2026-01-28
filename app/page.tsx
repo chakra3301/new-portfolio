@@ -7,7 +7,8 @@ import { CustomCursor } from "@/components/effects/CustomCursor";
 import { PageLoader } from "@/components/effects/PageLoader";
 import { Hero } from "@/components/sections/Hero";
 import { Projects } from "@/components/sections/Projects";
-import { Art } from "@/components/sections/Art";
+// TODO: Uncomment to restore Art section
+// import { Art } from "@/components/sections/Art";
 import { About } from "@/components/sections/About";
 import { Contact } from "@/components/sections/Contact";
 
@@ -31,7 +32,8 @@ export default function Home() {
         {/* Page sections */}
         <Hero />
         <Projects />
-        <Art />
+        {/* TODO: Uncomment to restore Art section */}
+        {/* <Art /> */}
         <About />
         <Contact />
       </main>

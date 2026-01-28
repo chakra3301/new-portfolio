@@ -6,7 +6,8 @@ import Image from "next/image";
 
 const navItems = [
   { label: "Work", href: "#projects" },
-  { label: "Art", href: "#art" },
+  // TODO: Uncomment to restore Art navigation item
+  // { label: "Art", href: "#art" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];

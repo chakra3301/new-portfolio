@@ -74,13 +74,13 @@ export const projects: Project[] = [
   },
   {
     id: "project-6",
-    title: "DIGII GHOST",
-    description: "3D generative art project exploring the concept of digital ghosts and their interactions with the physical world.",
+    title: "WEB 3 FORGE",
+    description: "NFT and website generator for web3 projects. Create unique generative NFT collections with layered assets and rarity systems, and build beautiful responsive websites for your Web3 projects with drag-and-drop visual editing.",
     tech: ["blender", "after effects", "AI tools"],
     role: "Creative Developer",
     year: "2025",
-    image: "/images/projects/flux.jpg",
-    link: "#",
+    image: "/images/projects/web3forge-preview.png",
+    link: "https://web3forge.chakraportfolio.xyz/",
   },
 ];
 
@@ -136,7 +136,7 @@ export const artPieces: ArtPiece[] = [
 ];
 
 export const aboutContent = {
-  headline: "Building My World Through",
+  headline: "World Building",
   subheadline: "Art And Digital Experiences",
   intro: "I'm a creative technologist obsessed with the intersection of design, code, and human experience.",
   philosophy: [
