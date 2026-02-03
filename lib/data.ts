@@ -21,6 +21,28 @@ export interface ArtPiece {
 
 export const projects: Project[] = [
   {
+    id: "project-dia",
+    title: "DEAD INTERNET ARCHIVE",
+    description: "Shopify Hydrogen website for a clothing brand. A nostalgic digital experience channeling early 2000s internet aesthetics—CRT scanlines, vaporwave vibes, and meme culture. Explore the archive with a retro monitor interface and stickers-era personality.",
+    tech: ["Shopify Hydrogen", "React", "TypeScript", "Tailwind CSS"],
+    role: "Creative Developer",
+    year: "2026",
+    image: "/images/projects/dia-preview.png",
+    link: "https://deadinternetarchive.com",
+    featured: true,
+  },
+  {
+    id: "project-7",
+    title: "FRUIT GAME",
+    description: "A web3-enabled game with wallet connection, leaderboard, store, and inventory. Play in a glossy 3D-style interface with vibrant, reflective visuals.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    role: "Creative Developer",
+    year: "2026",
+    image: "/images/projects/fruit-game-preview.png",
+    link: "https://fruitgame.chakraportfolio.com",
+    featured: true,
+  },
+  {
     id: "project-1",
     title: "ARK : GENESIS",
     description: "A premium, immersive trading card game concept website featuring full-screen hero with particle effects, 3D card showcases, cinematic pack opening experiences, and scroll-driven lore storytelling. Built with dark UI, glassmorphism, and holographic effects.",
@@ -40,7 +62,6 @@ export const projects: Project[] = [
     year: "2026",
     image: "/images/projects/archive.png",
     link: "https://gallery.chakraportfolio.xyz/",
-    featured: true,
   },
   {
     id: "project-3",
